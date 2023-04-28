@@ -1,4 +1,4 @@
-package goroutinePool
+package goPool
 
 const (
 	defaultScalaThreshold = 1

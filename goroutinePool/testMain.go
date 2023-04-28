@@ -1,16 +1,16 @@
 package main
 
 import (
-	"demo/goroutinePool"
 	"fmt"
 	"time"
+	"wheet-go/goroutinePool/goPool"
 )
 
 func main() {
 	start := time.Now()
 
 	ch := make(chan struct{})
-	goroutinePool.Go(func() {
+	goPool.Go(func() {
 		fmt.Println("子协程正在执行...")
 		time.Sleep(2 * time.Second) // 模拟子协程执行时间
 		fmt.Println("子协程执行完成")
